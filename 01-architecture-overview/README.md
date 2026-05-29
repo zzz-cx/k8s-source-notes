@@ -6,6 +6,12 @@
 - 建立源码目录与运行时组件的映射关系
 - 了解一次 `kubectl apply` 请求在集群中的完整路径
 
+## 已有笔记
+
+| 笔记 | 内容 |
+|------|------|
+| [k8s-basics-features-and-components.md](./k8s-basics-features-and-components.md) | K8s 八大核心功能、七大组件、九大资源对象 |
+
 ## 源码顶层目录
 
 | 目录 | 作用 |
@@ -41,12 +47,9 @@ kubectl → kube-apiserver → etcd
          kubelet（创建容器）
 ```
 
-## 笔记
-
-（在此记录学习笔记）
-
 ## 建议阅读顺序
 
-1. 通读本目录，画出架构图
-2. 浏览 `cmd/` 下各组件的 `main()` 入口
-3. 阅读 `staging/src/k8s.io/apimachinery/pkg/runtime/` 了解对象模型
+1. 阅读 [k8s-basics-features-and-components.md](./k8s-basics-features-and-components.md)，建立功能与组件的全局认知
+2. 通读本目录，画出架构图
+3. 浏览 `cmd/` 下各组件的 `main()` 入口
+4. 阅读 `staging/src/k8s.io/apimachinery/pkg/runtime/` 了解对象模型

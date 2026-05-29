@@ -15,6 +15,12 @@ Phase 6  核心机制          → 06-core-mechanisms/
 Phase 7  扩展与进阶        → 07-extension/
 ```
 
+## 已收录笔记
+
+| 笔记 | 路径 |
+|------|------|
+| K8s 基础功能与组件 | [01-architecture-overview/k8s-basics-features-and-components.md](./01-architecture-overview/k8s-basics-features-and-components.md) |
+
 ## 推荐学习顺序
 
 | 阶段 | 目录 | 预计时长 | 核心目标 |

@@ -19,6 +19,7 @@
 
 ### Kubernetes 概念
 
+- [x] 核心功能与组件（见 [01 架构全景笔记](../01-architecture-overview/k8s-basics-features-and-components.md)）
 - [ ] 控制面 vs 数据面
 - [ ] 声明式 API 与期望状态
 - [ ] Informer / List-Watch 机制（概念层面）
@@ -30,10 +31,6 @@
 - [ ] 本地源码编译：`make`、`make quick-release`
 - [ ] 代码跳转工具（gopls / IDE）
 - [ ] 本地集群（kind / minikube）用于验证
-
-## 笔记
-
-（在此记录学习笔记）
 
 ## 参考资料
 
