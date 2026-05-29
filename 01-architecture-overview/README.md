@@ -1,0 +1,52 @@
+# Phase 1：架构全景
+
+## 学习目标
+
+- 理解 Kubernetes 整体架构（控制面 + 节点 + 附加组件）
+- 建立源码目录与运行时组件的映射关系
+- 了解一次 `kubectl apply` 请求在集群中的完整路径
+
+## 源码顶层目录
+
+| 目录 | 作用 |
+|------|------|
+| `cmd/` | 各组件二进制入口（kube-apiserver、kubelet 等） |
+| `pkg/` | 核心业务逻辑实现 |
+| `staging/src/k8s.io/` | 可独立发布的 Go 模块（apimachinery、client-go 等） |
+| `api/` | OpenAPI 规范与 API 规则 |
+| `plugin/` | 准入插件、认证插件等 |
+| `test/` | 集成测试、e2e 测试 |
+
+## 核心组件入口
+
+| 组件 | 源码入口 |
+|------|----------|
+| kube-apiserver | `cmd/kube-apiserver/apiserver.go` |
+| kube-controller-manager | `cmd/kube-controller-manager/controller-manager.go` |
+| kube-scheduler | `cmd/kube-scheduler/scheduler.go` |
+| kubelet | `cmd/kubelet/kubelet.go` |
+| kube-proxy | `cmd/kube-proxy/proxy.go` |
+| kubectl | `cmd/kubectl/kubectl.go` |
+| kubeadm | `cmd/kubeadm/kubeadm.go` |
+
+## 请求链路（kubectl apply Pod）
+
+```
+kubectl → kube-apiserver → etcd
+                ↓
+         controller-manager（Reconcile）
+                ↓
+         kube-scheduler（Bind）
+                ↓
+         kubelet（创建容器）
+```
+
+## 笔记
+
+（在此记录学习笔记）
+
+## 建议阅读顺序
+
+1. 通读本目录，画出架构图
+2. 浏览 `cmd/` 下各组件的 `main()` 入口
+3. 阅读 `staging/src/k8s.io/apimachinery/pkg/runtime/` 了解对象模型
