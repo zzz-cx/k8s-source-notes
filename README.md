@@ -20,6 +20,8 @@ Phase 7  扩展与进阶        → 07-extension/
 | 笔记 | 路径 |
 |------|------|
 | K8s 基础功能与组件 | [01-architecture-overview/k8s-basics-features-and-components.md](./01-architecture-overview/k8s-basics-features-and-components.md) |
+| K8s 原理与架构图（13 张） | [diagrams/k8s-basics-architecture.md](./diagrams/k8s-basics-architecture.md) |
+| K8s 核心功能与组件总览图 | [diagrams/k8s-basics-overview.png](./diagrams/k8s-basics-overview.png) |
 
 ## 推荐学习顺序
 
