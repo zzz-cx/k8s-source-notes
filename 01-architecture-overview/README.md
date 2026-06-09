@@ -13,6 +13,7 @@
 | [k8s-basics-features-and-components.md](./k8s-basics-features-and-components.md) | K8s 八大核心功能、七大组件、九大资源对象 |
 | [k8s-basics-architecture.md](../diagrams/k8s-basics-architecture.md) | 对应原理与架构图（13 张 Mermaid） |
 | [k8s-basics-overview.png](../diagrams/k8s-basics-overview.png) | 核心功能与组件总览说明图 |
+| [k8s-basics-interview-qa.md](./k8s-basics-interview-qa.md) | 基础面试问答单元（6 题 + 追问） |
 
 ## 源码顶层目录
 
@@ -52,6 +53,7 @@ kubectl → kube-apiserver → etcd
 ## 建议阅读顺序
 
 1. 阅读 [k8s-basics-features-and-components.md](./k8s-basics-features-and-components.md)，建立功能与组件的全局认知
-2. 通读本目录，画出架构图
-3. 浏览 `cmd/` 下各组件的 `main()` 入口
-4. 阅读 `staging/src/k8s.io/apimachinery/pkg/runtime/` 了解对象模型
+2. 用 [k8s-basics-interview-qa.md](./k8s-basics-interview-qa.md) 自测面试高频题
+3. 通读本目录，画出架构图
+4. 浏览 `cmd/` 下各组件的 `main()` 入口
+5. 阅读 `staging/src/k8s.io/apimachinery/pkg/runtime/` 了解对象模型

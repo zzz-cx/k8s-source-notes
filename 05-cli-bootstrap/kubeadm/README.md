@@ -28,4 +28,4 @@
 
 ## 笔记
 
-（在此记录）
+参见 [k8s-cluster-setup-guide.md](../k8s-cluster-setup-guide.md) — 集群搭建完整流程与 `kubeadm init/join` 实操。
