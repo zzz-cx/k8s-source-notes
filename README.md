@@ -22,6 +22,12 @@ Phase 7  扩展与进阶        → 07-extension/
 | K8s 基础功能与组件 | [01-architecture-overview/k8s-basics-features-and-components.md](./01-architecture-overview/k8s-basics-features-and-components.md) |
 | K8s 原理与架构图（13 张） | [diagrams/k8s-basics-architecture.md](./diagrams/k8s-basics-architecture.md) |
 | K8s 核心功能与组件总览图 | [diagrams/k8s-basics-overview.png](./diagrams/k8s-basics-overview.png) |
+| K8s 基础面试问答 | [01-architecture-overview/k8s-basics-interview-qa.md](./01-architecture-overview/k8s-basics-interview-qa.md) |
+| K8s 集群搭建操作手册 | [05-cli-bootstrap/k8s-cluster-setup-guide.md](./05-cli-bootstrap/k8s-cluster-setup-guide.md) |
+| kubelet cgroup 源码笔记 | [04-node/kubelet/cgroup.md](./04-node/kubelet/cgroup.md) |
+| 飞书稳定性面试问答（90 题） | [interview/feishu-stability-interview-qa.md](./interview/feishu-stability-interview-qa.md) |
+| **字节面试综合准备指南** | [interview/interview-prep-guide.md](./interview/interview-prep-guide.md) |
+| **运维脚本面试题（75 题）** | [interview/ops-scripting-interview-qa.md](./interview/ops-scripting-interview-qa.md) |
 
 ## 推荐学习顺序
 
